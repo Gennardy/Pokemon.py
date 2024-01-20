@@ -1,1 +1,2 @@
-print("test")
+class Pokemon:
+    def __init__
