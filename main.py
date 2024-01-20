@@ -1,2 +1,3 @@
 class Pokemon:
-    def __init__
+    def __init__(self, name, type, atk, hp):
+
