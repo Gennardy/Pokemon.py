@@ -16,7 +16,7 @@ class Charmander:
             self.enemy.hp -= (self.attack * 2)
         elif self.enemy.type == "Water":
             self.enemy.hp -= (self.attack * 0.5)
-        elif self.enemy.type == "Fire"
+        elif self.enemy.type == "Fire":
             self.enemy.hp -= (self.attack * 0.5)
         else:
             self.enemy.hp -= self.attack
