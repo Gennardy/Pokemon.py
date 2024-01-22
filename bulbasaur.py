@@ -33,7 +33,7 @@ class Bulbasaur:
     def move4(self):
         if self.enemy.type == "Fire":
             self.enemy.hp -= (self.attack * 2)
-        if self.enemy.type == "Grass"
+        if self.enemy.type == "Grass":
             self.enemy.hp -= (self.attack * 0.5)
         else:
             self.enemy.hp -= self.attack
