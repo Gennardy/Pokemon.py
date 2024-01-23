@@ -4,10 +4,10 @@ class Squirtle:
         self.type = "Water"
         self.attack = 17
         self.hp = 120
-        self.move1 = "Bubble"
-        self.move2 = "Quick Attack"
-        self.move3 = "Protect"
-        self.move4 = "Pluck"
+        self.move1_name = "Bubble"
+        self.move2_name = "Quick Attack"
+        self.move3_name = "Protect"
+        self.move4_name = "Pluck"
     def assign_enemy(self,enemy):
         self.enemy = enemy
 
@@ -20,19 +20,19 @@ class Squirtle:
             self.enemy.hp -= (self.attack * 0.5)
         else:
             self.enemy.hp -= self.attack
-        print(f"{self.name} use {self.move1}")
+        print(f"{self.name} use {self.move1_name}")
 
     def move2(self):
         self.enemy.hp -= self.attack
-        print(f"{self.name} use {self.move2}")
+        print(f"{self.name} use {self.move2_name}")
 
     def move3(self):
         self.hp += self.enemy.attack
-        print(f"{self.name} use {self.move3}")
+        print(f"{self.name} use {self.move3_name}")
 
     def move4(self):
         if self.enemy.type == "Grass":
             self.enemy.hp -= (self.attack * 2)
         else:
             self.enemy.hp -= self.attack
-        print(f"{self.name} use {self.move4}")
+        print(f"{self.name} use {self.move4_name}")
